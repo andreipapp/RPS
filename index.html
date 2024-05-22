@@ -6,14 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Papers Scissors</title>
 </head>
+<style>
+    .board,
+    .score {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    .user-choice,
+    .computer-choice,
+    .human-score,
+    .computer-score {
+        display: inline;
+    }
+
+    .buttons,
+    .resultMessage {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+</style>
 
 <body>
 
-    <div class="result"></div>
-    <button class="rock">Rock</button>
-    <button class="paper">Paper</button>
-    <button class="scissors">Scissors</button>
-
+    <div class="score">
+        <div>Human score: <div class="human-score"></div>
+        </div>
+        <div>Computer score: <div class="computer-score"></div>
+        </div>
+    </div>
+    <div class="board">
+        <div>You chose:
+            <div class="user-choice"></div>
+        </div>
+        <div>Computer chose:
+            <div class="computer-choice"></div>
+        </div>
+    </div>
+    <div class="resultMessage"></div>
+    <div class="buttons">
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
